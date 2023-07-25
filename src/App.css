@@ -1,0 +1,124 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Add the Google Fonts link here */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.addTask {
+  display: flex;
+  align-items: center;
+  background-color: #e8e8e8;
+  /* Set a darker color for the AddTask div */
+}
+
+.addTask input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #000;
+  /* Specify the font-family here */
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Add this CSS class */
+.cancelButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1em;
+  /* Add this property to remove the outline on hover */
+  outline: none;
+}
+
+.addTask button {
+  padding: 8px 16px;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.1s;
+}
+
+.addTask button:hover {
+  background-color: black;
+  color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.taskList {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  /* Set the color for the taskList div */
+}
+
+/* Task CSS class for tasks in the taskList div */
+.task {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  /* Add any additional styles you want for the tasks */
+}
+
+.taskItem {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.taskItem p {
+  /* Style for the normal text */
+  margin: 0;
+}
+
+.taskItem button {
+  padding: 8px 20px;
+  /* background-color: #000; */
+  color: grey;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.1s;
+}
+
+.taskItem button:hover {
+  background-color: none;
+  color: #000;
+  border: none;
+}
+
+.completedTask {
+  background-color: #c8f1c0;
+  /* Light green color */
+}
+
+/* Placeholder styles... */
+::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+:-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #aaa;
+}
